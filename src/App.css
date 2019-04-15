@@ -7,9 +7,9 @@ body{
   text-align:center;
   font-family: Lato;
   text-decoration: underline;
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom:25px;
-  padding-top: 60%;
+  padding-top: 20%;
   font-size: 26px;
   font-weight: 900;
 
@@ -19,5 +19,22 @@ body{
 .strike-center {
   background-color: #fffA4B;
   padding: 50px;
+
+}
+
+.TopicIntro {
+  margin-top:18%;
+  margin-left:10%;
+  margin-right:10%;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-style: groove;
+  font-family:Raleway;
+  line-height:2;
+
+}
+
+.Submission_Form {
+  margin-top: 25px;
 
 }
