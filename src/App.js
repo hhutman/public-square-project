@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import SubmissionForm from './SubmissionForm'
-import Images from './Images'
+import Images from './public/Images'
 
 class App extends Component {
   render() {
