@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import SubmissionForm from './SubmissionForm'
-import working_mother from './Images/working_mother'
+import Images from './Images'
 
 class App extends Component {
   render() {
@@ -14,7 +14,8 @@ class App extends Component {
           </div>
 
 
-            <img src={working_mother.png} />
+
+             <img src={Images} />
 
 
 
