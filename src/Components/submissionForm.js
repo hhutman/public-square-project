@@ -1,12 +1,16 @@
 import React from "react"
 import ReactDom from "react-dom"
+import "./App.css"
 
 const inputStyle = {
   width: '300px',
+  borderStyle: 'groove',
+  border: '#d3d3d3',
+  marginLeft: '15%',
 
 }
 
-class SubmissionForm extends React.Component {
+class submissionForm extends React.Component {
 
   constructor() {
       super()
@@ -28,13 +32,7 @@ class SubmissionForm extends React.Component {
   render() {
       return (
             <form onSubmit={this.handleSubmit}>
-              <input style={{inputStyle}}
-                  type="text"
-                  value={this.state.publicSquareName}
-                  name="publicSquareName"
-                  placeholder="Choose Your Public Square Name"
-                  onChange={this.handleChange}
-              />
+
 
               <input
                   type="text"
@@ -60,4 +58,4 @@ class SubmissionForm extends React.Component {
   }
 }
 
-export default SubmissionForm
+export default submissionForm

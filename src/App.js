@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import SubmissionForm from './SubmissionForm'
+import SubmissionForm from './Components/SubmissionForm/submissionForm'
 import Img from 'react-image'
 
 
