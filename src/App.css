@@ -22,15 +22,16 @@ body{
 
 }
 
-.TopicIntro {
-  margin-top:18%;
+.TheQuestion {
+  font-family: raleway;
+  padding: 20px;
+  margin-top:0;
   margin-left:10%;
   margin-right:10%;
-  border-style: solid;
-  border-color: #d3d3d3;
-  border-style: groove;
+  /* border-color: black;
+  border-style: ridge; */
   font-family:Raleway;
-  line-height:2;
+  line-height:1.3;
 
 }
 

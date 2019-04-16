@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
-import SubmissionForm from './Components/SubmissionForm/submissionForm'
+import SubmissionForm from './submissionForm'
 import Img from 'react-image'
+import workingMother from './Images/workingMother.png'
+
 
 
 class App extends Component {
@@ -14,13 +16,19 @@ class App extends Component {
           <span className="strike-center">Public Square Project</span>
           </div>
 
-          <Img src="working_mother.png" />
+        <img src={workingMother} alt="mother and child" height="50px" />
 
-          <div className="TopicIntro">
-          Quality child care is expensive. In many states, it can cost more than tuition at a public university. It’s also in scarce supply.  The average cost of child care in the United States can range from 9 to 36 percent of a family’s income, depending on where they live. Moody’s estimates that the typical family paying for child care spends about 10 percent of their income on it, but the challenge is especially acute for low-income families and single parents. In some states, a minimum wage worker simply would need to work more weeks than exist in a year to afford an average-priced day care.
+          <div className="TheQuestion">
+          How has the cost of childcare affected your family?
+            <ul>
+                <li>  Have you ever turned down work because you can’t afford childcare? </li>
+                <li>  What percent of your families income goes to childcare?  </li>
+                <li>  What changes have you made to make it work? </li>
+
+                  </ul>
 
           </div>
-          <div className="Submission_Form">
+          <div className="SubmissionForm">
           <SubmissionForm />
           </div>
       </div>

@@ -1,14 +1,9 @@
 import React from "react"
 import ReactDom from "react-dom"
 import "./App.css"
+import "./submissionForm.css"
 
-const inputStyle = {
-  width: '300px',
-  borderStyle: 'groove',
-  border: '#d3d3d3',
-  marginLeft: '15%',
 
-}
 
 class submissionForm extends React.Component {
 
@@ -17,9 +12,7 @@ class submissionForm extends React.Component {
       this.state = {
           publicSquareName: "",
           userEmail: "",
-          // isFriendly: false,
-          // gender: "",
-          // favColor: "blue"
+
       }
       this.handleChange = this.handleChange.bind(this)
   }
@@ -31,17 +24,27 @@ class submissionForm extends React.Component {
 
   render() {
       return (
+
+        <div className="form">
             <form onSubmit={this.handleSubmit}>
 
+              <input className="inputStyle"
+                  type="text"
+                  value={this.state.publicSquareName}
+                  name="publicSquareName"
+                  placeholder="Write the name you want shown with your conversations"
+                  onChange={this.handleChange}
+                  />
 
-              <input
+              <br/> <br/><br/>
+              <input className="inputStyle"
                   type="text"
                   value={this.state.userEmail}
                   name="userEmail"
                   placeholder="Email: this will not be shown in the square"
                   onChange={this.handleChange}
               />
-
+              <br/> <br/><br/>
               <textarea
                   type= "text"
                   value={this.state.blogText}
@@ -50,10 +53,11 @@ class submissionForm extends React.Component {
                   onChange={this.handleChange}
               />
 
-
+                <br/> <br/><br/>
 
               <button>Submit</button>
           </form>
+          </div>
       )
   }
 }
