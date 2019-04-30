@@ -7,16 +7,14 @@ import workingMother from './Images/workingMother.png'
 
 
 
+
 class App extends Component {
   render() {
     return (
       <div className="App">
 
-  
-        {<h1>Public Square Project</h1>}
-
-
     <div className="Nav">
+    {<h1>Public Square Project</h1>}
 
 
       </div>

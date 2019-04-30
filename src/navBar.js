@@ -5,33 +5,19 @@ import { StickyContainer, Sticky } from 'react-sticky';
 
 // ...
 
-class Navbar extends React.Component {
-  render() {
-    return (
+const nav = document.querySelector('nav');
+const navTop = nav.offsetTop;
 
-
-        <Sticky>
-
-          {({
-            style,
-
-
-            // the following are also available but unused in this example
-            isSticky,
-            wasSticky,
-            distanceFromTop,
-            distanceFromBottom,
-            calculatedHeight
-          }) => (
-            <header style={style}>
-              {<h1>Public Square Project</h1>}
-            </header>
-          )}
-        </Sticky>
-
-
-    );
+function handleScroll() {
+  if (window.scrollY > navTop) {
+    nav.classList.add('fixed-nav');
+    document.body.style.paddingTop = nav.offsetHeight+'px';
+  } else {
+    nav.classList.remove('fixed-nav');
+    document.body.style.paddingTop = 0;
   }
-};
+}
+
+window.addEventListener('scroll', handleScroll);
 
 export default Navbar
