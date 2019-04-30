@@ -6,15 +6,21 @@ import workingMother from './Images/workingMother.png'
 
 
 
+
 class App extends Component {
   render() {
     return (
       <div className="App">
 
-          <div className="ProjectTitle">
+  
+        {<h1>Public Square Project</h1>}
 
-          <span className="strike-center">Public Square Project</span>
-          </div>
+
+    <div className="Nav">
+
+
+      </div>
+
 
         <img src={workingMother} alt="mother and child" height="50px" />
 
@@ -31,9 +37,37 @@ class App extends Component {
           <div className="SubmissionForm">
           <SubmissionForm />
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
       </div>
+
     );
+
   }
+
 }
 
 
