@@ -1,0 +1,23 @@
+.prompt {
+
+  background-color: #e0ff5c;
+  top: 0;
+  height:85px;
+  width:100%;
+
+}
+
+.promtWords {
+  text-align: center;
+  font-family: Lato;
+  color: #ff7A5c;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: -50px;
+  padding-top:12px;
+  overflow: hidden;
+
+
+
+}

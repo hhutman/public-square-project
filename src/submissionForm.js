@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDom from "react-dom"
+
 import "./App.css"
 import "./submissionForm.css"
 
@@ -32,7 +32,7 @@ class submissionForm extends React.Component {
                   type="text"
                   value={this.state.publicSquareName}
                   name="publicSquareName"
-                  placeholder="Write the name you want shown with your conversations"
+                  placeholder="Choose your Name in the Public Square"
                   onChange={this.handleChange}
                   />
 
@@ -45,17 +45,18 @@ class submissionForm extends React.Component {
                   onChange={this.handleChange}
               />
               <br/> <br/><br/>
-              <textarea
+              <textarea className="inputStyle"
                   type= "text"
                   value={this.state.blogText}
                   name="blogText"
-                  placeholder="write your reply here"
+                  placeholder="How has the cost of childcare affected your or your family?"
                   onChange={this.handleChange}
               />
 
                 <br/> <br/><br/>
-
+      <div className="button">
               <button>Submit</button>
+              </div>
           </form>
           </div>
       )

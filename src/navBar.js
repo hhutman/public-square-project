@@ -1,23 +1,28 @@
-import React from 'react';
-import './navBar.css';
-import { StickyContainer, Sticky } from 'react-sticky';
+import React from "react"
+import "./Navbar.css"
 
 
-// ...
+class Navbar extends React.Component {
+  render() {
+    return (
 
-const nav = document.querySelector('nav');
-const navTop = nav.offsetTop;
+      <div className = "Navbar">
+      <div className= "NavbarTitle">
+        The Public Square Project
+        </div>
 
-function handleScroll() {
-  if (window.scrollY > navTop) {
-    nav.classList.add('fixed-nav');
-    document.body.style.paddingTop = nav.offsetHeight+'px';
-  } else {
-    nav.classList.remove('fixed-nav');
-    document.body.style.paddingTop = 0;
-  }
+        <div className= "NavbarSmall">
+          Visit
+          </div>
+
+          <div className= "NavbarSmall">
+            Join In
+            </div>
+
+            </div>
+      )
+    }
 }
 
-window.addEventListener('scroll', handleScroll);
 
 export default Navbar
