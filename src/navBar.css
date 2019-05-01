@@ -1,0 +1,35 @@
+.Navbar {
+
+  margin-top: 0px;
+  margin-bottom:10px;
+  overflow: hidden;
+  background-color: #e0ff5c;
+  position: fixed;
+  top: 0;
+  height:78px;
+  width: 100%;
+  transform: skewY(4deg);
+
+}
+
+.NavbarTitle {
+  margin-left: 25%;
+  margin-right: 40%;
+  font-family: Lato;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 900;
+  color: #ff7A5c;
+  padding-top: 10px;
+  padding-bottom:3px;
+  inline-size: 300px;
+  transform: skewY(-4deg);
+}
+
+.NavbarSmall {
+  margin-left:80%;
+  font-family: Lato;
+  font-size:12px;
+  color: #ff7A5c;
+  transform: skewY(-4deg);
+}

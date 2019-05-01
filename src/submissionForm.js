@@ -1,21 +1,18 @@
 import React from "react"
-import ReactDom from "react-dom"
 
-const inputStyle = {
-  width: '300px',
+import "./App.css"
+import "./submissionForm.css"
 
-}
 
-class SubmissionForm extends React.Component {
+
+class submissionForm extends React.Component {
 
   constructor() {
       super()
       this.state = {
           publicSquareName: "",
           userEmail: "",
-          // isFriendly: false,
-          // gender: "",
-          // favColor: "blue"
+
       }
       this.handleChange = this.handleChange.bind(this)
   }
@@ -27,37 +24,43 @@ class SubmissionForm extends React.Component {
 
   render() {
       return (
+
+        <div className="form">
             <form onSubmit={this.handleSubmit}>
-              <input style={{inputStyle}}
+
+              <input className="inputStyle"
                   type="text"
                   value={this.state.publicSquareName}
                   name="publicSquareName"
-                  placeholder="Choose Your Public Square Name"
+                  placeholder="Choose your Name in the Public Square"
                   onChange={this.handleChange}
-              />
+                  />
 
-              <input
+              <br/> <br/><br/>
+              <input className="inputStyle"
                   type="text"
                   value={this.state.userEmail}
                   name="userEmail"
                   placeholder="Email: this will not be shown in the square"
                   onChange={this.handleChange}
               />
-
-              <textarea
+              <br/> <br/><br/>
+              <textarea className="inputStyle"
                   type= "text"
                   value={this.state.blogText}
                   name="blogText"
-                  placeholder="write your reply here"
+                  placeholder="How has the cost of childcare affected your or your family?"
                   onChange={this.handleChange}
               />
 
-
-
+                <br/> <br/><br/>
+      <div className="button">
               <button>Submit</button>
+              </div>
           </form>
+          </div>
       )
   }
 }
 
-export default SubmissionForm
+export default submissionForm
